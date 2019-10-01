@@ -12,3 +12,11 @@
   text-align: center;
   width: 100%;
 }
+
+header {
+  display: flex;
+}
+
+.title {
+  font-size: 50px;
+}

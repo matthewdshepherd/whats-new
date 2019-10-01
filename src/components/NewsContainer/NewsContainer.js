@@ -3,8 +3,6 @@ import NewsArticle from '../NewsArticle/NewsArticle'
 import './NewsContainer.css'
 
 const NewsContainer = ( {news} ) => {
-  
-  console.log(news)
   const newArticles = news.map((article, i) => <NewsArticle key={`newsArticle${i}`} article={article} />)
 
   return (
@@ -12,6 +10,6 @@ const NewsContainer = ( {news} ) => {
       {newArticles}
     </div>
   )
-  }
+}
 
 export default NewsContainer;

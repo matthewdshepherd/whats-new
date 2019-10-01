@@ -6,6 +6,7 @@ import science from '../../data/science';
 import technology from '../../data/technology';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu';
+import SearchForm from '../SearchForm/SearchForm';
 import './App.css';
 
 class App extends Component {
@@ -28,7 +29,11 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        YOUR CODE GOES HERE!
+        <header>
+          <h1 className='title'>WHATS NEW</h1>
+          <SearchForm />
+        </header>
+
         <Menu navOptions={Object.keys(this.state)} selectTopic={this.selectTopic} state={this.state} />
         <NewsContainer news={this.state.currentTopic}/>
       </div>
