@@ -1,6 +1,17 @@
 import React from 'react';
+import NewsArticle from '../NewsArticle/NewsArticle'
 import './NewsContainer.css'
 
-// NEWSCONTAINER COMPONENT CODE GOES HERE
+const NewsContainer = ( {news} ) => {
+  
+  console.log(news)
+  const newArticles = news.map((article, i) => <NewsArticle key={`newsArticle${i}`} article={article} />)
+
+  return (
+    <div className='news-container'>
+      {newArticles}
+    </div>
+  )
+  }
 
 export default NewsContainer;
