@@ -11,7 +11,11 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      local,
+      entertainment,
+      health,
+      science,
+      technology
     }
   }
 
