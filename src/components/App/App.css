@@ -6,8 +6,9 @@
 
 .app {
   display: flex;
+  flex-direction: column;
   /* background: #141527; */
   height: 100vh;
-  /* text-align: center; */
+  text-align: center;
   width: 100%;
 }
