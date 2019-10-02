@@ -8,6 +8,10 @@ class SearchForm extends Component {
    this.state= {};
  }
 
+ setCurrentTopicToState = () => {
+   
+ }
+
  render() {
    return (
      <form className='searchField'>
