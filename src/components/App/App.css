@@ -23,3 +23,8 @@ header {
 .title {
   font-size: 50px;
 }
+
+.nav {
+  grid-area: nav;
+  border-bottom: 5px solid #00dae1;
+}

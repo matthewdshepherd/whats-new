@@ -28,13 +28,14 @@ class App extends Component {
 
   render () {
     return (
-      <div className="app">
+      <div className='app'>
         <header>
           <h1 className='title'>WHATS NEW</h1>
           <SearchForm />
         </header>
-
-        <Menu navOptions={Object.keys(this.state)} selectTopic={this.selectTopic} state={this.state} />
+        <nav className='nav'>
+          <Menu navOptions={Object.keys(this.state)} selectTopic={this.selectTopic} state={this.state} />
+        </nav>
         <NewsContainer news={this.state.currentTopic}/>
       </div>
     );
