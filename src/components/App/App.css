@@ -5,19 +5,19 @@
 }
 
 .app {
-
   display: grid;
   grid-template-areas: 'header' 'nav' 'body';
-
-  /* flex-direction: column; */
   height: 100%;
   text-align: center;
   width: 100%;
 }
 
 header {
+  align-items: center;
   display: flex;
   grid-area: header;
+  justify-content: space-around;
+  height: 20vh;
 }
 
 .title {
