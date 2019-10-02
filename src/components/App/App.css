@@ -5,16 +5,19 @@
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  /* background: #141527; */
-  height: 100vh;
+
+  display: grid;
+  grid-template-areas: 'header' 'nav' 'body';
+
+  /* flex-direction: column; */
+  height: 100%;
   text-align: center;
   width: 100%;
 }
 
 header {
   display: flex;
+  grid-area: header;
 }
 
 .title {

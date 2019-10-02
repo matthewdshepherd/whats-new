@@ -3,11 +3,11 @@ import './Menu.css'
 
 const Menu = ({ navOptions, selectTopic, state }) => {
   navOptions.pop()
-  const navBar = navOptions.map((topic, i) => <li key={i} id={topic} onClick={() => selectTopic(state[topic])}>{topic}</li>)  
-  
   return (
-    <ul>{navBar}</ul>
+    <ul>{navOptions.map((topic, i) => <li key={i} id={topic} onClick={() => selectTopic(state[topic])}>{topic}</li>)} </ul> 
   )
+  
+  
 }
 
 export default Menu;
