@@ -36,7 +36,9 @@ class App extends Component {
         <nav className='nav'>
           <Menu navOptions={Object.keys(this.state)} selectTopic={this.selectTopic} state={this.state} />
         </nav>
-        <NewsContainer news={this.state.currentTopic}/>
+        <section className='section'>
+          <NewsContainer news={this.state.currentTopic}/>
+        </section>
       </div>
     );
   }

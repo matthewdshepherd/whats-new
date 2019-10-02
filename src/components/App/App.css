@@ -28,3 +28,7 @@ header {
   grid-area: nav;
   border-bottom: 5px solid #00dae1;
 }
+
+.section {
+  grid-area: body;
+}
