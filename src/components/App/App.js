@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div className='app'>
         <header>
-          <h1 className='title'>WHATS NEW</h1>
+          <h1 className='title'>WHAT'S NEW</h1>
           <SearchForm />
         </header>
         <nav className='nav'>
