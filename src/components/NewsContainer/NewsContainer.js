@@ -1,17 +1,10 @@
 import React from 'react';
-import NewsArticleImgLeft from '../NewsArticle/NewsArticleImgLeft'
-import NewsArticleImgRight from '../NewsArticle/NewsArticleImgRight'
-import './NewsContainer.css'
+import NewsArticle from '../NewsArticle/NewsArticle'
+import './NewsContainer.scss'
 
 const NewsContainer = ( {news} ) => {
 
-  const newsArticles = news.map((article, i) => {
-    if (i === 0 || i % 2 === 0) {
-      return <NewsArticleImgLeft key={`newsArticle${i}`} article={article} />
-    } else {
-      return <NewsArticleImgRight key={`newsArticle${i}`} article={article} />
-    }
-  })
+  const newsArticles = news.map((article, i) => <NewsArticle key={`newsArticle${i}`} article={article} />)
 
   return (
     <div className='news-container'>

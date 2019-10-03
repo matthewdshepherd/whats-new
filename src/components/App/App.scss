@@ -1,0 +1,54 @@
+// Define Variables
+// ! WIP --> This settings needs a dedicated file
+
+// * Colors
+$c-purple: #AA6EEA;
+$c-black: #000;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body { background: #141526 }
+
+.app {
+  height: 100vh;
+
+  @supports (display: grid) {
+    @media screen and (min-width: 60rem) {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 'header header' 'nav body';
+    }
+  }
+
+  .site-header   {
+    grid-area: header;
+    padding: 1rem;
+
+    @supports (display: flex) {
+      @media screen and (min-width: 60rem) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    h1 {
+      font-size: 3.125rem;
+      color: #fff;
+      span { color: #F3B13D }
+    }
+  }
+
+  .site-nav { grid-area: nav; }
+  
+  .site-container {
+    grid-area: body;
+    @media screen and (min-width: 60rem) { overflow-y: scroll }
+  }
+}
+

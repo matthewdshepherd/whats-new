@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewsArticle.css';
+import './NewsArticle.scss';
 
 const NewsArticleImgRight = ({ article }) => {
   return (

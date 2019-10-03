@@ -1,0 +1,11 @@
+.news-container {
+  padding: 1rem;
+  @supports (display: grid) {
+    @media screen and(min-width: 70rem) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      padding: 0 1rem 1rem 0;
+    }
+  }
+}
