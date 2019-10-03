@@ -1,7 +1,5 @@
 .searchField {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-end
+  display: flex
 }
 
 .input {
@@ -16,6 +14,8 @@
   font-size: 25px;
   padding-bottom: 5px;
   font-weight: 300;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .input::placeholder {

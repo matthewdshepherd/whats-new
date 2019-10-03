@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  height: 100vh;
+
+  @supports (display: grid) {
+    @media screen and (min-width: 60rem) {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 'header header' 'nav body';
+    }
+  }
+
+  .site-header   {
+    grid-area: header;
+    padding: 1rem;
+
+    @supports (display: flex) {
+      @media screen and (min-width: 60rem) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    h1 { font-size: 3.125rem }
+  }
+
+  .site-nav { grid-area: nav; }
+  
+  .site-container {
+    grid-area: body;
+    overflow-y: scroll;
+  }
+}
+
