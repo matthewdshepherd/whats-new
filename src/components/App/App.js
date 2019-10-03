@@ -33,12 +33,15 @@ class App extends Component {
     this.setState({ currentTopic: searchResults })
   }
 
-  search = (search) => {
-    this.selectTopic(this.currentTopic)
-    const filteredArticles = this.state.currentTopic.filter(topic => {
-      return (topic.headline.toLowerCase().includes(search) || topic.description.toLowerCase().includes(search))
+  search = (searchWord) => {
+
+      this.setState({ currentTopic: this[this.currentTopic] }, 
+        () => {
+      this.displaySearch(this.state.currentTopic.filter(topic => {
+        return (topic.headline.toLowerCase().includes(searchWord) || topic.description.toLowerCase().includes(searchWord))
+      }))
     })
-    this.displaySearch(filteredArticles)
+
   }
 
   render () {

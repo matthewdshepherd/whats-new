@@ -20,6 +20,9 @@ class SearchForm extends Component {
     event.preventDefault();
     this.props.search(this.state.search.toLowerCase())
    
+    this.setState({
+      search: ''
+    })
  }
 
  render() {
