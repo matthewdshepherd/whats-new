@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.NavClass 
+{
+display:flex;
+justify-content:space-between; 
+align-content:center;
+}
+
+.NavLink 
+{
+display:flex; 
+}
+
+.NavLink li:hover 
+{
+    /*add code to change state as preferred*/
+}
