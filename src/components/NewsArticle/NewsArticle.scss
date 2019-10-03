@@ -1,0 +1,76 @@
+.card-news {
+  width: 100%;
+  background: #FFF;
+  margin-bottom: 1rem;
+  @media screen and(min-width: 70rem) { margin-bottom: 0 } 
+
+  > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    overflow: hidden;
+
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    color: #000;
+    padding: 1rem;
+
+    > h2 {
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    > p {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__button {
+    background: #AA6EEA;
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+    transition: .3s ease;
+    margin-top: auto;
+
+    i {
+      display: inline-block;
+      min-width: 20px;
+      min-height: 20px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg aria-hidden='true' data-prefix='far' data-icon='arrow-right' class='svg-inline--fa fa-arrow-right fa-w-14' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23fff' d='M218.1 38.1l-19.8 19.8a12 12 0 000 17L353.4 230H12a12 12 0 00-12 12v28a12 12 0 0012 12h341.4L198.3 437.1a12 12 0 000 17l19.8 19.8a12 12 0 0017 0l209.4-209.4a12 12 0 000-17L235 38.1a12 12 0 00-17 0z'/%3E%3C/svg%3E");
+      vertical-align: middle;
+      margin-left: .5rem;
+      margin-top: -2px;
+      transition: .3s ease;
+    }
+  }
+
+  > a:hover, > a:focus {
+    .card-news__button {
+      background: darken(#AA6EEA, 10%);
+
+      i { transform: translateX(5px) }
+    }
+  }
+}

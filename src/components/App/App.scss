@@ -1,8 +1,17 @@
+// Define Variables
+// ! WIP --> This settings needs a dedicated file
+
+// * Colors
+$c-purple: #AA6EEA;
+$c-black: #000;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+body { background: #141526 }
 
 .app {
   height: 100vh;
@@ -28,14 +37,18 @@
       }
     }
 
-    h1 { font-size: 3.125rem }
+    h1 {
+      font-size: 3.125rem;
+      color: #fff;
+      span { color: #F3B13D }
+    }
   }
 
   .site-nav { grid-area: nav; }
   
   .site-container {
     grid-area: body;
-    overflow-y: scroll;
+    @media screen and (min-width: 60rem) { overflow-y: scroll }
   }
 }
 

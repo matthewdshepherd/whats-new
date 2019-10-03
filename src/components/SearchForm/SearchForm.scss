@@ -1,37 +1,64 @@
 .searchField {
-  display: flex
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 1rem;
+
+  @media screen and(min-width: 40rem) {
+    flex-direction: row;
+  }
+
+  @media screen and(min-width: 60rem) {
+    margin-left: 75px;
+    margin-top: 0;
+  }
+  .input {
+    background-color: #fff;
+    margin-bottom: 20px;
+    height: 40px;
+    padding-left: 10px;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    padding: .5rem .5rem .5rem 1.5rem;
+    font-weight: 300;
+    flex-grow: 1;
+    width: 100%;
+
+    @media screen and(min-width: 40rem) {
+      flex-direction: row;
+      border-radius: 50px 0 0 50px;
+      margin-top: 0;
+    }
+  }
+
 }
 
-.input {
-  background-color: #c7c5c5;
-  margin-bottom: 20px;
-  height: 40px;
-  width: 300px;
-  padding-left: 10px;
-  color: #000;
-  border: none;
-  border-bottom: 5px solid #00dae1;
-  font-size: 25px;
-  padding-bottom: 5px;
-  font-weight: 300;
-  flex-grow: 1;
-  width: 100%;
-}
+
 
 .input::placeholder {
   color: #000;
-  font-size: 25px;
   font-weight: 300;
 }
 
 .button {
-  background-color: #c7c5c5;
+  background-color: #AA6EEA;
   height: 40px;
-  width: 300px;
-  color: #000;
-  font-size: 25px;
+  color: #fff;
+  font-size: 1.125rem;
   border: none;
-  border-radius: 0 50px 50px 0;
+  border-radius: 50px;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 700;
+  transition: .3s ease;
+
+  &:hover, &:focus {
+    background-color: darken(#AA6EEA, 10%);
+  }
+
+  @media screen and(min-width: 40rem) {
+    border-radius: 0 50px 50px 0;
+    padding: .5rem 2.5rem;
+  }
 }

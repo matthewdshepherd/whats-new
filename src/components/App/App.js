@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div className='app'>
         <header className="site-header">
-          <h1>WHAT'S NEW</h1>
+          <h1>What's <span>New ?</span></h1>
           <SearchForm currentTopic={this.state.currentTopic} selectTopic={this.selectTopic}/>
         </header>
 
