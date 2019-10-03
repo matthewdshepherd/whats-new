@@ -12,18 +12,33 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
+    this.local = local;
+    this.entertainment = entertainment;
+    this.health = health;
+    this.science = science;
+    this.technology = technology;
+    this.currentTopic = 'local'
     this.state = {
-      local,
-      entertainment,
-      health,
-      science,
-      technology,
-      currentTopic: local
-    }
+      currentTopic: this.local
+    };
+   
   }
 
   selectTopic = (topic) => {
-    this.setState({ currentTopic: topic} )
+    this.setState({ currentTopic: this[topic]} )
+    this.currentTopic = topic
+  }
+
+  displaySearch = (searchResults) => {
+    this.setState({ currentTopic: searchResults })
+  }
+
+  search = (search) => {
+    this.selectTopic(this.currentTopic)
+    const filteredArticles = this.state.currentTopic.filter(topic => {
+      return (topic.headline.toLowerCase().includes(search) || topic.description.toLowerCase().includes(search))
+    })
+    this.displaySearch(filteredArticles)
   }
 
   render () {
@@ -31,10 +46,10 @@ class App extends Component {
       <div className='app'>
         <header>
           <h1 className='title'>WHAT'S NEW</h1>
-          <SearchForm currentTopic={this.state.currentTopic} selectTopic={this.selectTopic}/>
+          <SearchForm currentTopic={this.currentTopic} search={this.search}/>
         </header>
         <nav className='nav'>
-          <Menu navOptions={Object.keys(this.state)} selectTopic={this.selectTopic} state={this.state} />
+          <Menu selectTopic={this.selectTopic} />
         </nav>
         <section className='section'>
           <NewsContainer news={this.state.currentTopic}/>

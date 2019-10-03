@@ -1,17 +1,19 @@
 .searchField {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-content: flex-end
 }
 
 .input {
-  background-color: #c7c5c5;
+  /* background-color: #c7c5c5; */
+  border: none;
+  border-left: 1px solid #c7c5c5;
+  border-top: 1px solid #c7c5c5;
   margin-bottom: 20px;
   height: 40px;
   width: 300px;
   padding-left: 10px;
   color: #000;
-  border: none;
   border-bottom: 5px solid #00dae1;
   font-size: 25px;
   padding-bottom: 5px;
@@ -25,12 +27,15 @@
 }
 
 .button {
-  background-color: #c7c5c5;
+  /* background-color: #c7c5c5; */
+  border: none;
+  border-top: 1px solid #c7c5c5;
+  border-right: 1px solid #c7c5c5;
+  border-bottom: 5px solid #00dae1;
   height: 40px;
-  width: 300px;
+  width: 150px;
   color: #000;
   font-size: 25px;
-  border: none;
   border-radius: 0 50px 50px 0;
   cursor: pointer;
   font-weight: 300;

@@ -5,9 +5,11 @@ class SearchForm extends Component {
 
  constructor() {
    super();
+   this.currentTopic = ''
    this.state= {
      search: ''
-   };
+    };
+    console.log(this.props)
  }
 
   handleChange = event => {
@@ -16,21 +18,15 @@ class SearchForm extends Component {
   
   searchSubmit = (event) => {
     event.preventDefault();
-    const search = this.state.search.toLowerCase();
-    const filteredArticles = this.props.currentTopic.filter( topic => {
-      return (topic.headline.toLowerCase().includes(search) || topic.description.toLowerCase().includes(search) )
-    })
-    // console.log(filteredArticles)
-
-    this.props.selectTopic(filteredArticles)
-
+    this.props.search(this.state.search.toLowerCase())
+   
  }
 
  render() {
    return (
      <form className='searchField'>
        <input className='input' type='text' name='search' placeholder='search' value={this.state.search} onChange={event => this.handleChange(event)}/>
-       <button className='button' onClick={(event) => this.searchSubmit(event)} >Search</button>
+       <button className='button' onClick={(event) => this.searchSubmit(event)} >GO</button>
      </form>
    )
  }
