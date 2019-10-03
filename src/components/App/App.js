@@ -31,7 +31,7 @@ class App extends Component {
       <div className='app'>
         <header>
           <h1 className='title'>WHAT'S NEW</h1>
-          <SearchForm />
+          <SearchForm currentTopic={this.state.currentTopic} selectTopic={this.selectTopic}/>
         </header>
         <nav className='nav'>
           <Menu navOptions={Object.keys(this.state)} selectTopic={this.selectTopic} state={this.state} />
