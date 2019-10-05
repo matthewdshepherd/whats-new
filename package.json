@@ -1,21 +1,27 @@
 {
   "name": "whats-new",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "This application was built with `create-react-app`.",
+  "main": "index.js",
   "dependencies": {
-    "react": "^16.10.0",
-    "react-dom": "^16.10.0",
-    "react-scripts": "3.1.2"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ak127a/whats-new.git"
   },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ak127a/whats-new/issues"
+  },
+  "homepage": "https://github.com/ak127a/whats-new#readme",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -26,16 +32,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "enzyme-to-json": "^3.4.2"
-  },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
     ]
   }
 }
