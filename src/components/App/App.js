@@ -36,21 +36,23 @@ class App extends Component {
     this.setState({ currentTopic: this.local})
   }
 
-  selectTopic = (event, topic) => {
+  selectTopic = (topic) => {
     this.setState({ currentTopic: this[topic]} )
     this.currentTopic = topic
-    console.log(event)
     // add css to current topic and remove it from the rest
   }
 
-  displaySearch = (searchResults) => {
+  // change disaplySearch to udpate APP state and then change menu from a component to
+  // a class so that the current selected icon can live in that state
+
+  updateState = (searchResults) => {
     this.setState({ currentTopic: searchResults })
   }
 
   search = (searchWord) => {
       this.setState({ currentTopic: this[this.currentTopic] }, 
         () => {
-      this.displaySearch(this.state.currentTopic.filter(topic => {
+      this.updateState(this.state.currentTopic.filter(topic => {
         return (topic.headline.toLowerCase().includes(searchWord) || topic.description.toLowerCase().includes(searchWord))
       }))
     })
