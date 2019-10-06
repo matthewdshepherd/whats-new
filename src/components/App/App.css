@@ -18,10 +18,10 @@ header {
   grid-area: header;
   justify-content: space-around;
   height: 20vh;
+  margin-bottom: 25px;
 }
 
 .title {
-  /* font-size: 50px; */
   height: 135px;;
 }
 

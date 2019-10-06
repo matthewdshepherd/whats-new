@@ -24,7 +24,6 @@ class App extends Component {
     fetch('https://whats-new-api.herokuapp.com/api/v1/news')
     .then(response => response.json())
     .then( data => this.setTopicData(data))
-    .then( data => console.log(data))
     .catch(error => console.error(error))
   }
 
@@ -37,9 +36,11 @@ class App extends Component {
     this.setState({ currentTopic: this.local})
   }
 
-  selectTopic = (topic) => {
+  selectTopic = (event, topic) => {
     this.setState({ currentTopic: this[topic]} )
     this.currentTopic = topic
+    console.log(event)
+    // add css to current topic and remove it from the rest
   }
 
   displaySearch = (searchResults) => {
@@ -47,14 +48,12 @@ class App extends Component {
   }
 
   search = (searchWord) => {
-
       this.setState({ currentTopic: this[this.currentTopic] }, 
         () => {
       this.displaySearch(this.state.currentTopic.filter(topic => {
         return (topic.headline.toLowerCase().includes(searchWord) || topic.description.toLowerCase().includes(searchWord))
       }))
     })
-
   }
 
   render () {

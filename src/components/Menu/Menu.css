@@ -9,8 +9,24 @@
   font-size: 20px;
   cursor: pointer;
   font-weight: 300;
+  border-top: 1px solid transparent;
 }
 
 .topic:hover {
+  /* color: #064C9C; */
+  /* color: #2CB252; */
   color: #00dae1;
+
+  /* color: #EC2823; */
+  /* border-top: 1px solid #EC2823; */
+  /* border-top: 1px solid #2CB252; */
+  border-top: 1px solid #00dae1;
+
+  
+}
+
+.currentTopic {
+  color: #00dae1;
+  border-top: 1px solid #00dae1;
+
 }
