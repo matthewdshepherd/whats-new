@@ -19,7 +19,6 @@ class SearchForm extends Component {
   searchSubmit = (event) => {
     event.preventDefault();
     this.props.search(this.state.search.toLowerCase())
-   
     this.setState({
       search: ''
     })

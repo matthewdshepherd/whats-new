@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should match the snapshot with all topics displayed 1`] = `
+<ul
+  className="menu"
+>
+  <li
+    className="topic"
+    id="local"
+    key="0"
+    onClick={[Function]}
+    topic="local"
+  >
+    LOCAL
+  </li>
+  <li
+    className="topic"
+    id="entertainment"
+    key="1"
+    onClick={[Function]}
+    topic="entertainment"
+  >
+    ENTERTAINMENT
+  </li>
+  <li
+    className="topic"
+    id="health"
+    key="2"
+    onClick={[Function]}
+    topic="health"
+  >
+    HEALTH
+  </li>
+  <li
+    className="topic"
+    id="science"
+    key="3"
+    onClick={[Function]}
+    topic="science"
+  >
+    SCIENCE
+  </li>
+  <li
+    className="topic"
+    id="technology"
+    key="4"
+    onClick={[Function]}
+    topic="technology"
+  >
+    TECHNOLOGY
+  </li>
+   
+</ul>
+`;
