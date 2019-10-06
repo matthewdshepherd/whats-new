@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsArticleImgLeft should match the snapshot with all data passed in correctly 1`] = `
+<article
+  className="newsArticle"
+  id={5}
+>
+  <div
+    className="imageDiv"
+  >
+    <img
+      alt="Hundred and One Dalmatians"
+      className="img"
+      src="www.101.com"
+    />
+  </div>
+  <div
+    className="newsArticleContents"
+  >
+    <h2
+      className="articleTitle"
+    >
+      Hundred and One Dalmatians
+    </h2>
+    <p
+      className="articleDescription"
+    >
+      Cruella visits their home and expresses contempt upon meeting Roger. Her initial disgust at them having a baby turns to excitement when she finds out Perdy is expecting too.
+    </p>
+    <a
+      className="articleLink"
+      href="www.101.com"
+    >
+       ◀︎ Full Story 
+    </a>
+  </div>
+</article>
+`;

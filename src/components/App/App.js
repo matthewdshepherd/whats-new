@@ -1,27 +1,40 @@
 import React, { Component } from 'react';
-import local from '../../data/local';
-import entertainment from '../../data/entertainment';
-import health from '../../data/health';
-import science from '../../data/science';
-import technology from '../../data/technology';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu';
 import SearchForm from '../SearchForm/SearchForm';
 import './App.css';
+import logo from '../../images/KnewsLogo.png'
 
 class App extends Component {
-  constructor() {
+  constructor(data) {
     super();
-    this.local = local;
-    this.entertainment = entertainment;
-    this.health = health;
-    this.science = science;
-    this.technology = technology;
+    this.local = null;
+    this.entertainment = null;
+    this.health = null;
+    this.science = null;
+    this.technology = null;
     this.currentTopic = 'local'
     this.state = {
-      currentTopic: this.local
+      currentTopic: []
     };
    
+  }
+
+  componentDidMount() {
+    fetch('https://whats-new-api.herokuapp.com/api/v1/news')
+    .then(response => response.json())
+    .then( data => this.setTopicData(data))
+    .then( data => console.log(data))
+    .catch(error => console.error(error))
+  }
+
+  setTopicData = (data) => {
+    this.local = data.local;
+    this.entertainment = data.entertainment;
+    this.health = data.health;
+    this.science = data.science;
+    this.technology = data.technology;
+    this.setState({ currentTopic: this.local})
   }
 
   selectTopic = (topic) => {
@@ -48,7 +61,7 @@ class App extends Component {
     return (
       <div className='app'>
         <header>
-          <h1 className='title'>WHAT'S NEW</h1>
+          <img className='title' src={logo} alt='Knews Logo' />
           <SearchForm currentTopic={this.currentTopic} search={this.search}/>
         </header>
         <nav className='nav'>

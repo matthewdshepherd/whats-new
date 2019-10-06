@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsContainer should match the snapshot with all the data passed in corretly with a zero or even index 1`] = `
+<div
+  className="news-container"
+>
+  <NewsArticleImgLeft
+    article={
+      Object {
+        "description": "Cruella visits their home and expresses contempt upon meeting Roger. Her initial disgust at them having a baby turns to excitement when she finds out Perdy is expecting too.",
+        "headline": "Hundred and One Dalmatians",
+        "id": 5,
+        "img": "www.101.com",
+        "url": "www.101.com",
+      }
+    }
+    key="newsArticle0"
+  />
+  <NewsArticleImgRight
+    article={
+      Object {
+        "description": "This heartwarming adaptation of the novel tells the story of the courageous stallion Black Beauty, a well-bred horse in 19th century England.",
+        "headline": "Black Beauty",
+        "id": 4,
+        "img": "www.blackbeautymovie.com",
+        "url": "www.blackbeautymovie.com",
+      }
+    }
+    key="newsArticle1"
+  />
+</div>
+`;
