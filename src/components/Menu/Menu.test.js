@@ -5,6 +5,7 @@ import Menu from './Menu'
 describe('Menu', () => {
   it('should match the snapshot with all topics displayed', () =>{
     // setup
+    
     const mockSelectTopic = jest.fn();
 
     // execution
