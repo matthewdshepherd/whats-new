@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300&display=swap');
 .searchField {
   display: flex;
   /* flex-direction: column; */
@@ -6,6 +7,7 @@
 
 .input {
   /* background-color: #c7c5c5; */
+  font-family: 'Oxygen', sans-serif;
   border: none;
   border-left: 1px solid #c7c5c5;
   border-top: 1px solid #c7c5c5;
@@ -24,6 +26,7 @@
   color: #000;
   font-size: 20px;
   font-weight: 300;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .button {
@@ -36,6 +39,7 @@
   width: 50px;
   color: #000;
   font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
   border-radius: 0 50px 50px 0;
   cursor: pointer;
   font-weight: 300;
