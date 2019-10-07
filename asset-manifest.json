@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.74ebcd61.chunk.css",
-    "main.js": "./static/js/main.4760ca75.chunk.js",
-    "main.js.map": "./static/js/main.4760ca75.chunk.js.map",
+    "main.js": "./static/js/main.ab088ce0.chunk.js",
+    "main.js.map": "./static/js/main.ab088ce0.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.bf980d17.js",
     "runtime-main.js.map": "./static/js/runtime-main.bf980d17.js.map",
     "static/js/2.cffa7557.chunk.js": "./static/js/2.cffa7557.chunk.js",
     "static/js/2.cffa7557.chunk.js.map": "./static/js/2.cffa7557.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.07ff989f7541f717ef47d8ab00fa2912.js": "./precache-manifest.07ff989f7541f717ef47d8ab00fa2912.js",
+    "precache-manifest.e86337c07ae172873f595a30d0e6e1bd.js": "./precache-manifest.e86337c07ae172873f595a30d0e6e1bd.js",
     "service-worker.js": "./service-worker.js",
     "static/css/main.74ebcd61.chunk.css.map": "./static/css/main.74ebcd61.chunk.css.map",
     "static/media/KnewsLogo.png": "./static/media/KnewsLogo.2f49a783.png"
