@@ -27,7 +27,7 @@
 }
 
 .button {
-  /* background-color: #c7c5c5; */
+  background: url("https://raw.githubusercontent.com/matthewdshepherd/whats-new/master/src/images/KnewsLogo.png") -150px -720px;
   border: none;
   border-top: 1px solid #c7c5c5;
   border-right: 1px solid #c7c5c5;
@@ -40,7 +40,8 @@
   cursor: pointer;
   font-weight: 300;
 }
-
-.button:focus {
-  border-radius: 0 50px 50px 0;
+.button:active {
+  border-top: 2px solid #c7c5c5;
+  border-right: 2px solid #c7c5c5;
+  border-bottom: 6px solid #00dae1;
 }
