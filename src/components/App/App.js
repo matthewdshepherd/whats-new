@@ -3,7 +3,8 @@ import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu';
 import SearchForm from '../SearchForm/SearchForm';
 import './App.css';
-import logo from '../../images/KnewsLogo.png'
+import logo from '../../../src/images/KnewsLogo.png'
+
 
 class App extends Component {
   constructor(data) {

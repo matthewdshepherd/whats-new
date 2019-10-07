@@ -16,5 +16,4 @@ describe('SearchForm', () =>{
     expect(wrapper.state()).toEqual(expected)
   })
 
-
 })
