@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   width: 47%;
   margin: 0 10px;
 }
@@ -46,4 +46,34 @@ font-size: 22px;
 
 .articleLink:hover {
   color: hotpink;
+}
+
+@media screen and (max-width:768px) {
+  .newsArticle {
+    display:block;
+  }
+
+  .newsArticle .imageDiv {
+    width:100%;
+  }
+
+  .newsArticleContents {
+    display:block;
+    width:100%;
+  }
+
+  .newsArticleContents h2 {
+    margin:20px 0;
+  }
+
+  .newsArticleContents a {
+    margin-top:20px;
+    display:block;
+  }
+
+  .newsArticle + .newsArticle {
+    border-top:1px solid #eee;
+    padding-top:30px;
+    margin-top:0px;
+  }
 }
