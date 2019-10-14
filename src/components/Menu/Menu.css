@@ -22,11 +22,20 @@
   /* border-top: 1px solid #2CB252; */
   border-top: 1px solid #00dae1;
 
-  
+
 }
 
 .currentTopic {
   color: #00dae1;
   border-top: 1px solid #00dae1;
 
+}
+
+@media screen and (max-width:768px) {
+  .menu {
+    display:block;
+  }
+  .menu li + li {
+    margin-top:10px;
+  }
 }
